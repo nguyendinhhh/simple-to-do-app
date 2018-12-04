@@ -5,6 +5,9 @@ const linkedbag1 = new LinkedList();
 linkedbag1.add(2);
 linkedbag1.add('aaa');
 
+linkedbag1.add('b');
+linkedbag1.add('c');
+
 linkedbag1.display();
 
 
