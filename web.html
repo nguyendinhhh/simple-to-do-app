@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <title>To Do App Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="" target="_blank">
+
+    <body>
+        <!--PAGE CONTENT-->
+        <div class = "content" >
+        
+        <!--Header-->
+        <div class ="opacity">
+            <!-- <span class = "button xxlarge white right" onclick="open()"><i class="fa fa-bars"></i></span>
+            <div class="clear"></div> -->
+        <header class = "center margin-bottom">
+            <h1><b>CHOOSE AN OPTION</b></h1>
+            <p><b>Please choose any of the following actions to use the app</b></p>
+            <p class="padding-16"><button class="button black" onclick="myFunction()">See Activities</button></p>
+            <p class="padding-16"><button class="button black" onclick="myFunction()">Add Activities</button></p>
+            <p class="padding-16"><button class="button black" onclick="myFunction()">Delete All</button></p>
+        </header>
+        </div>
+        </div>
+
+        <script>
+        // Toggle grid padding
+        function myFunction()
+        {
+            const x = document.getElementById("myGrid");
+            if (x.className === "row"){
+                x.className = "row-padding";
+            }
+            else {
+                x.className = x.className.replace("row-padding", "row");
+            }
+        }
+        </script>
+    </body>
+
+    <style>
+    body{
+        background-color: rgb(228, 19, 19);
+        text-align: center;
+        color: #FFF;
+        font-size: 18px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+
+    
+    h1 {
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        color: #FFF;
+        }
+    img {
+        margin-bottom: -7px;
+        margin-left: auto;
+        margin-right: auto;
+        }
+    .row-padding img {margin-bottom: 12px}
+    button{
+        font-family: 'Courier New', Courier, monospace;
+        width: 15em;
+        height: 4em;
+        /* border: 2px solid gainsboro; */
+        background: #444;
+        color: #FFF;
+        border: none;
+        padding: 10px 20px;
+        /* border-radius: 5px; */
+        display: inline-block;
+        font-size: 16px;
+        margin: auto;
+    }
+    button:hover{
+        background: #6584a7;
+    }
+
+    .content{
+        margin: auto;
+        max-width: 1500px;
+    }
+    </style>
+</html>

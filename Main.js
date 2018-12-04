@@ -2,10 +2,10 @@ const LinkedList = require('./LinkedList');
 const mergeSort = require('./merge-sort');
 const linkedbag1 = new LinkedList();
 
-// linkedbag1.add(2);
-// linkedbag1.add('aaa');
-// linkedbag1.add('hahaha');
-// linkedbag1.display();
+linkedbag1.add(2);
+linkedbag1.add('aaa');
+linkedbag1.add('hahaha');
+linkedbag1.display();
 
 console.log('*********MERGE SORT**********');
 
