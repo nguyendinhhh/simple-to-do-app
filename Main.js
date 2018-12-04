@@ -4,8 +4,10 @@ const linkedbag1 = new LinkedList();
 
 linkedbag1.add(2);
 linkedbag1.add('aaa');
-
+linkedbag1.add('hahaha');
 linkedbag1.display();
+
+
 
 
 
