@@ -14,7 +14,7 @@
         <header>
             <h1><b>TO-DO</b></h1>
             <p><b>Please choose any of the following actions.</b></p>
-            <p><button class="button black">See Activities</button></p>
+            <p><button class="button black" onclick="showTasks()">See Activities</button></p>
             <p><button class="button black">Add Activities</button></p>
             <p><button class="button black">Delete All</button></p>
         </header>
@@ -22,12 +22,15 @@
 
         <!--Body Content-->
         <div class="bodycontent">
-                <p>You have no activities at the moment.</p>
+                <p id="showingtasks"></p>
         </div>
         </div>
 
         <script>
-    
+            function showTasks(){
+                // If there are no activitities
+                document.getElementById("showingtasks").innerHTML = "You have no activities.";
+            }
         </script>
     </body>
 
