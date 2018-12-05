@@ -11,19 +11,3 @@ console.log('*********MERGE SORT**********');
 
 const list = [2, 3, 4, 1, 2, 5, 5, 4, 2, 4];
 console.log(mergeSort(list));
-
-
-
-
-
-
-/*
-function Person(name, age){
-    this.name = name;
-    this.age = age;
-}
-
-Person.prototype.getName = function(){
-    return this.name;
-}
-*/
