@@ -10,35 +10,43 @@
         <div class = "content" >
         
         <!--Header-->
-        <div class ="opacity">
-            <!-- <span class = "button xxlarge white right" onclick="open()"><i class="fa fa-bars"></i></span>
-            <div class="clear"></div> -->
-        <header class = "center margin-bottom">
-            <h1><b>CHOOSE AN OPTION</b></h1>
-            <p><b>Please choose any of the following actions to use the app</b></p>
-            <p class="padding-16"><button class="button black" onclick="myFunction()">See Activities</button></p>
-            <p class="padding-16"><button class="button black" onclick="myFunction()">Add Activities</button></p>
-            <p class="padding-16"><button class="button black" onclick="myFunction()">Delete All</button></p>
+        <div>
+        <header>
+            <h1><b>TO-DO</b></h1>
+            <p><b>Please choose any of the following actions.</b></p>
+            <p><button class="button black">See Activities</button></p>
+            <p><button class="button black">Add Activities</button></p>
+            <p><button class="button black">Delete All</button></p>
         </header>
+        </div>
+
+        <!--Body Content-->
+        <div class="bodycontent">
+                <p>You have no activities at the moment.</p>
         </div>
         </div>
 
         <script>
-        // Toggle grid padding
-        function myFunction()
-        {
-            const x = document.getElementById("myGrid");
-            if (x.className === "row"){
-                x.className = "row-padding";
-            }
-            else {
-                x.className = x.className.replace("row-padding", "row");
-            }
-        }
+    
         </script>
     </body>
 
     <style>
+    .bodycontent{
+        height: 100px;
+    }
+    .bodycontent p {
+        color: rgba(255, 255, 255, 0.788);
+        /* text-align: center; */
+        /* line-height: 100px; */
+        border: 2px dashed #f69c55;
+        margin-left: 90px;
+        margin-right: 90px; 
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     body{
         background-color: rgb(228, 19, 19);
         text-align: center;
@@ -46,20 +54,14 @@
         font-size: 18px;
         font-family: 'Courier New', Courier, monospace;
     }
-
-
     
     h1 {
         font-family: 'Courier New', Courier, monospace;
         text-align: center;
         color: #FFF;
         }
-    img {
-        margin-bottom: -7px;
-        margin-left: auto;
-        margin-right: auto;
-        }
-    .row-padding img {margin-bottom: 12px}
+   
+    .row-padding {margin-bottom: 12px}
     button{
         font-family: 'Courier New', Courier, monospace;
         width: 15em;
@@ -75,7 +77,7 @@
         margin: auto;
     }
     button:hover{
-        background: #6584a7;
+        background: #f69c55;
     }
 
     .content{
