@@ -14,41 +14,116 @@
         <header>
             <h1><b>TO-DO</b></h1>
             <p><b>Please choose any of the following actions.</b></p>
-            <p><button class="button black" onclick="showTasks()">See Activities</button></p>
-            <p><button class="button black">Add Activities</button></p>
+            <p><button class="button black" onclick="showTasks();">See Activities</button></p>
+            <p><button class="button black" onclick="addTasks()">Add Activities</button></p>
             <p><button class="button black">Delete All</button></p>
         </header>
         </div>
 
         <!--Body Content-->
         <div class="bodycontent">
+            <div>   <!--printing tasks-->
                 <p id="showingtasks"></p>
-        </div>
+            </div> 
+
+            <div> <!--Adding Tasks-->
+                <p id = "myDIV">Please add tasks and priority level.</p>
+            </div> 
+
         </div>
 
-        <script>
-            function showTasks(){
-                // If there are no activitities
-                document.getElementById("showingtasks").innerHTML = "You have no activities.";
-            }
+
+        <!-- <button onclick = "myFunction()">Click me</button> -->
+
+
+
+
+
+
+        <!-- <div id = "about" class = "hidden">
+            <div class = "content3">
+                    <p style="padding-top:20px">
+                            <a href="javascript:unhide('link', 'about')" class="button">This is a link</a><br><br>
+                            <a href="javascript:unhide('about', 'link')" class="button">About</a>
+                    </p>
+            </div>
+        </div>
+        <input type="button" onclick="unhide(this, 'about')" value="unhide"> -->
+
+
+
+
+
+        <!-- <div class="container">
+                <form action="/action_page.php">
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="fname">First Name</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="lname">Last Name</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="country">Country</label>
+                    </div>
+                    <div class="col-75">
+                      <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="subject">Subject</label>
+                    </div>
+                    <div class="col-75">
+                      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <input type="submit" value="Submit">
+                  </div>
+                </form>
+              </div> -->
+
+        </div>
+
+        
+
+        <script type ="text/javascript" src="execute.js">
+
+            
         </script>
     </body>
 
     <style>
     .bodycontent{
-        height: 100px;
+        /* height: 100px; */
+        border: 2px dashed #f69c55;
     }
+
     .bodycontent p {
         color: rgba(255, 255, 255, 0.788);
         /* text-align: center; */
         /* line-height: 100px; */
-        border: 2px dashed #f69c55;
-        margin-left: 90px;
-        margin-right: 90px; 
-        padding-top: 30px;
+        
+        margin: auto;
+        /* padding-top: 30px;
         padding-bottom: 30px;
         padding-left: 10px;
-        padding-right: 10px;
+        padding-right: 10px; */
     }
     body{
         background-color: rgb(228, 19, 19);
