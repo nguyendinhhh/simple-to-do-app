@@ -16,6 +16,35 @@ class LinkedList{
         this.numberOfEntries = 0;
     }
 
+    // getReferenceTo(anEntry){
+    //     let found = false;
+    //     let currentNode = this.firstNode;
+
+    //     while (!found && (currentNode != null)){
+    //         if (anEntry === currentNode.data)
+    //             found = true;
+    //         else
+    //             currentNode = currentNode.next;
+    //     }
+    //     return currentNode;
+    // }
+
+
+    // remove(){
+    //     let result = null;
+    //     if (this.firstNode!=null){
+    //         result = this.firstNode.data;
+    //         this.firstNode = this.firstNode.next;
+    //         this.numberOfEntries--;
+    //     }
+    //     return result;
+    // }
+
+    // clear(){
+    //     while (this.numberOfEntries > 0)
+    //         remove();
+    // }
+
     add(newEntry){
         const newNode = new Node(newEntry);
         newNode.next = this.firstNode;
@@ -33,7 +62,21 @@ class LinkedList{
         }
     }
 
+    toArray(){
+        const result = [];
+
+        let currentNode = this.firstNode;
+        while (currentNode !== null)
+        {
+            result.push(currentNode.data);
+            currentNode=currentNode.next;
+        }
+        return result;
+    }
+
+
+
 }
 
 
-module.exports = LinkedList;
+//module.exports = LinkedList;
