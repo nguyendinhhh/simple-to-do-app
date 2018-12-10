@@ -16,6 +16,25 @@ class LinkedList{
         this.numberOfEntries = 0;
     }
 
+    remove(){
+        if (this.numberOfEntries === 0)
+        {
+            return undefined;
+        }
+        const value = this.firstNode.data;
+        this.firstNode = this.firstNode.next;
+        this.numberOfEntries--;
+
+        return value;
+    }
+
+    clear(){
+        while(this.numberOfEntries > 0)
+        {
+            this.remove();
+        }
+    }
+
     // getReferenceTo(anEntry){
     //     let found = false;
     //     let currentNode = this.firstNode;
@@ -79,4 +98,4 @@ class LinkedList{
 }
 
 
-//module.exports = LinkedList;
+module.exports = LinkedList;

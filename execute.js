@@ -93,6 +93,7 @@ function addTasks(){
     document.getElementById("tasksFieldWrapper").style.display = "none";
     
     document.getElementById("addingTasksFieldWrapper").style.display = "block";
+
 }
 
 function submit() {

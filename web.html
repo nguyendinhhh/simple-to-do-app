@@ -14,22 +14,22 @@
         <header>
             <h1><b>TO-DO</b></h1>
             <p><b>Please choose any of the following actions.</b></p>
-            <p><button class="button black" onclick="showTasks()">See Activities</button></p>
-            <p><button class="button black" onclick="addTasks()">Add Activities</button></p>
-            <p><button class="button black">Delete All</button></p>
+            <p><button class="button" onclick="showTasks()">See Activities</button></p>
+            <p><button class="button" onclick="addTasks()">Add Activities</button></p>
+            <p><button class="button">Delete All</button></p>
         </header>
         </div>
 
         <!--Body Content-->
         <div class="bodycontent">
-            <div class="showingTasksField" id="tasksFieldWrapper">   <!--printing tasks-->
+            <div id="tasksFieldWrapper">   <!--printing tasks-->
                 <p id="showingtasks"></p>
-                <ul id="list"> <!--The todo list-->
-                    
+                <ul id="list" style="list-style:none;"> <!--The todo list-->
+                                      
                 </ul>
             </div> 
 
-            <div class="addingTasksField" id="addingTasksFieldWrapper"> <!--Adding Tasks-->
+            <div id="addingTasksFieldWrapper"> <!--Adding Tasks-->
                 <p id="addingTasks">Please add tasks and priority level.</p>
                 <div id="form">
                   <form>
@@ -133,8 +133,9 @@
       </body>
 
     <style>
-    
-    .addingTasksField{
+
+        
+    #addingTasksFieldWrapper{
       /* display: none; */
       border-radius: 5px;
       padding: 20px 60px;
@@ -196,7 +197,8 @@
         }
    
     .row-padding {margin-bottom: 12px}
-    button{
+    
+    .button{
         font-family: 'Courier New', Courier, monospace;
         width: 15em;
         height: 4em;
@@ -210,7 +212,7 @@
         font-size: 16px;
         margin: auto;
     }
-    button:hover{
+    .button:hover{
         background: #f69c55;
     }
     
