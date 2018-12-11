@@ -94,6 +94,8 @@ function addTasks(){
     
     document.getElementById("addingTasksFieldWrapper").style.display = "block";
 
+
+
 }
 
 function submit() {
