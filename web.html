@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <title>To Do App Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="" target="_blank">
+
+    <body>
+        <!--PAGE CONTENT-->
+        <div class = "content" >
+        
+        <!--Header-->
+        <div>
+        <header>
+            <h1><b>TO-DO</b></h1>
+            <p><b>Please choose any of the following actions.</b></p>
+            <p><button class="button" onclick="showTasks()">See Activities</button></p>
+            <p><button class="button" onclick="addTasks()">Add Activities</button></p>
+            <p><button class="button" onclick="deleteAll()">Delete All</button></p>
+        </header>
+        </div>
+
+        <!--Body Content-->
+        <div class="bodycontent">
+            <div id="tasksFieldWrapper">   <!--printing tasks-->
+                <p id="showingtasks"></p>
+                <ul id="list" style="list-style: none;"> <!--The todo list-->
+                                      
+                </ul>
+            </div> 
+
+            <div id="addingTasksFieldWrapper"> <!--Adding Tasks-->
+                <p id="addingTasks">Please add tasks and priority level (Highest: 1, Lowest: 5).</p>
+                <div id="form">
+                  <form>
+                    <label for="tname">Task Name</label>
+                    <input type="text" id="tname" name="taskName" placeholder="Your task...">
+                    <label for="plevel">Priority</label>
+                    <select name="priorityLevel" id="plevel">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>                   
+                  </form>
+                   <button onclick="submit();">Submit</button>
+                </div>
+            </div> 
+
+        </div>
+        </div>
+
+        <!--JAVASCRIPT FILES-->
+        <script type ="text/javascript" src="execute.js"></script>
+        <script type ="text/javascript" src="merge-sort.js"></script>
+        <script type ="text/javascript" src="LinkedList.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+      
+      </body>
+
+
+<!--CSS - Styling-->
+    <style>
+    #list{
+      margin-right: 40px;
+    }
+        
+    #addingTasksFieldWrapper{
+      border-radius: 5px;
+      padding: 20px 60px;
+    }
+
+    input[type=text], select{
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: none;
+      box-sizing: border-box;
+    }
+
+    input[type=submit]{
+      width: 20em;
+      background-color:#444;
+      color: #FFF;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover{
+      background-color:#f69c55;
+    }
+
+    .bodycontent{
+        border: 2px dashed #f69c55;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .bodycontent p {
+        color: rgba(255, 255, 255, 0.788);     
+        margin: auto;
+    }
+    body{
+        background-color: rgb(228, 19, 19);
+        text-align: center;
+        color: #FFF;
+        font-size: 18px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    h1 {
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        color: #FFF;
+        }
+   
+    .row-padding {margin-bottom: 12px}
+    
+    .button{
+        font-family: 'Courier New', Courier, monospace;
+        width: 15em;
+        height: 4em;
+        background: #444;
+        color: #FFF;
+        border: none;
+        padding: 10px 20px;
+        display: inline-block;
+        font-size: 16px;
+        margin: auto;
+    }
+    .button:hover{
+        background: #f69c55;
+    }
+
+    #showingtasks{
+      margin-top: 20px;
+    }
+    .content{
+        margin: auto;
+        max-width: 1500px;
+    }
+    </style>
+</html>

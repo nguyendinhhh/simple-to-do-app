@@ -3,10 +3,6 @@ class Node{
         this.data = data;
         this.next = null;
     }
-    
-    // getData(){
-    //     return this.data;
-    // }
 }
 
 class LinkedList{
@@ -14,6 +10,25 @@ class LinkedList{
         this.firstNode = null;
         // this.firstNode = new Node(null); will create another Node whose data is null
         this.numberOfEntries = 0;
+    }
+
+    remove(){
+        if (this.numberOfEntries === 0)
+        {
+            return undefined;
+        }
+        const value = this.firstNode.data;
+        this.firstNode = this.firstNode.next;
+        this.numberOfEntries--;
+
+        return value;
+    }
+
+    clear(){
+        while(this.numberOfEntries > 0)
+        {
+            this.remove();
+        }
     }
 
     add(newEntry){
@@ -33,7 +48,15 @@ class LinkedList{
         }
     }
 
+    toArray(){
+        const result = [];
+
+        let currentNode = this.firstNode;
+        while (currentNode !== null)
+        {
+            result.push(currentNode.data);
+            currentNode=currentNode.next;
+        }
+        return result;
+    }
 }
-
-
-module.exports = LinkedList;
