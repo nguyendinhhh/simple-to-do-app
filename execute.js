@@ -10,12 +10,12 @@ function showTasks(){
     
     document.getElementById("addingTasksFieldWrapper").style.display = "none";
 
-    const result = linkedbag1.toArray();
+    const result = linkedbag1.toArray(); // O(n)
     console.log(result);
 
     if (result.length > 0){
         document.getElementById("showingtasks").style.display = "none";
-        const sorted = mergeSort(result);
+        const sorted = mergeSort(result); // O(nlogn)
         $('#list').empty();
         $.each(sorted, function(key, value) {
           $('#list').append('<li>' + value.taskName + " -- " + value.priorityLevel + '</li>');
@@ -29,11 +29,11 @@ function showTasks(){
 function deleteAll(){
     console.log("BEFORE DELETING");
     console.log(linkedbag1);
-    linkedbag1.clear();
+    linkedbag1.clear(); // O(1)
     console.log("AFTER DELETING");
     console.log(linkedbag1);
 
-    const result = linkedbag1.toArray();
+    const result = linkedbag1.toArray(); // O(n)
     $('#list').empty();
     $.each(result, function(key,value){
         $('#list').append('<li>' + value.taskName + '</li>');
@@ -63,7 +63,7 @@ function submit() {
         document.getElementById("warning").innerHTML = "Please type in the task's name."
     }
     else{
-        linkedbag1.add(data);
-        linkedbag1.display();
+        linkedbag1.add(data); // O(1)
+        linkedbag1.display(); // O(n)
     }
 }

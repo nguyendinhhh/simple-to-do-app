@@ -25,10 +25,12 @@ class LinkedList{
     }
 
     clear(){
-        while(this.numberOfEntries > 0)
-        {
-            this.remove();
-        }
+        // while(this.numberOfEntries > 0) // O(n)
+        // {
+        //     this.remove(); 
+        // }
+
+        this.firstNode = null; // O(1)
     }
 
     add(newEntry){
