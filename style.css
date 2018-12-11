@@ -1,3 +1,31 @@
+.submitbutton{
+    border-radius: 25px;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    width: 10em;
+    height: 3em;
+    background:#f69c55;
+    color: #FFF;
+    border: none;
+    padding: 10px 10px;
+    display: inline-block;
+    font-size: 16px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.myfooter p{
+    color: rgb(112, 112, 112)
+}
+
+.myfooter{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#form{
+    margin-top: 30px;
+}
+
 #list{
   margin-right: 40px;
 }
@@ -12,8 +40,9 @@ input[type=text], select{
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: none;
+  border-radius: 25px;
   box-sizing: border-box;
+  border: 1px solid rgb(40, 101, 192);
 }
 
 input[type=submit]{
@@ -32,35 +61,39 @@ input[type=submit]:hover{
 
 .bodycontent{
     border: 2px dashed #f69c55;
-    margin-left: 100px;
-    margin-right: 100px;
+    border-radius: 25px;
+    width: 500px;
+    margin: auto;
+    /* margin-left: 100px;
+    margin-right: 100px; */
 }
 
 .bodycontent p {
-    color: rgba(255, 255, 255, 0.788);     
+    color: black;     
     margin: auto;
 }
 body{
-    background-color: rgb(228, 19, 19);
+    /* background-color: rgb(228, 19, 19); */
     text-align: center;
-    color: #FFF;
+    color: black;
     font-size: 18px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
 }
 
 h1 {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
     text-align: center;
-    color: #FFF;
+    color: black;
     }
 
 .row-padding {margin-bottom: 12px}
 
 .button{
-    font-family: 'Courier New', Courier, monospace;
+    border-radius: 25px;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
     width: 15em;
     height: 4em;
-    background: #444;
+    background: rgb(40, 101, 192);
     color: #FFF;
     border: none;
     padding: 10px 20px;
