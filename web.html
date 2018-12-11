@@ -16,7 +16,7 @@
             <p><b>Please choose any of the following actions.</b></p>
             <p><button class="button" onclick="showTasks()">See Activities</button></p>
             <p><button class="button" onclick="addTasks()">Add Activities</button></p>
-            <p><button class="button">Delete All</button></p>
+            <p><button class="button" onclick="deleteAll()">Delete All</button></p>
         </header>
         </div>
 
@@ -24,13 +24,13 @@
         <div class="bodycontent">
             <div id="tasksFieldWrapper">   <!--printing tasks-->
                 <p id="showingtasks"></p>
-                <ul id="list" style="list-style:none;"> <!--The todo list-->
+                <ul id="list" style="list-style: none;"> <!--The todo list-->
                                       
                 </ul>
             </div> 
 
             <div id="addingTasksFieldWrapper"> <!--Adding Tasks-->
-                <p id="addingTasks">Please add tasks and priority level.</p>
+                <p id="addingTasks">Please add tasks and priority level (Highest: 1, Lowest: 5).</p>
                 <div id="form">
                   <form>
                     <label for="tname">Task Name</label>
@@ -42,101 +42,31 @@
                       <option value="3">3</option>
                       <option value="4">4</option>
                       <option value="5">5</option>
-                    </select>
-                    <!-- Task Name: <input type="text" name="tname"><br>
-                    Priority: <input type="text" name="prilevel"><br> -->
-                   
+                    </select>                   
                   </form>
                    <button onclick="submit();">Submit</button>
                 </div>
             </div> 
 
         </div>
-
-
-        <!-- <button onclick = "myFunction()">Click me</button> -->
-
-
-
-
-
-
-        <!-- <div id = "about" class = "hidden">
-            <div class = "content3">
-                    <p style="padding-top:20px">
-                            <a href="javascript:unhide('link', 'about')" class="button">This is a link</a><br><br>
-                            <a href="javascript:unhide('about', 'link')" class="button">About</a>
-                    </p>
-            </div>
-        </div>
-        <input type="button" onclick="unhide(this, 'about')" value="unhide"> -->
-
-
-
-
-
-        <!-- <div class="container">
-                <form action="/action_page.php">
-                  <div class="row">
-                    <div class="col-25">
-                      <label for="fname">First Name</label>
-                    </div>
-                    <div class="col-75">
-                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-25">
-                      <label for="lname">Last Name</label>
-                    </div>
-                    <div class="col-75">
-                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-25">
-                      <label for="country">Country</label>
-                    </div>
-                    <div class="col-75">
-                      <select id="country" name="country">
-                        <option value="australia">Australia</option>
-                        <option value="canada">Canada</option>
-                        <option value="usa">USA</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-25">
-                      <label for="subject">Subject</label>
-                    </div>
-                    <div class="col-75">
-                      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <input type="submit" value="Submit">
-                  </div>
-                </form>
-              </div> -->
-
         </div>
 
-        
-
+        <!--JAVASCRIPT FILES-->
         <script type ="text/javascript" src="execute.js"></script>
-
+        <script type ="text/javascript" src="merge-sort.js"></script>
         <script type ="text/javascript" src="LinkedList.js"></script>
-        <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+      
       </body>
 
-    <style>
 
+<!--CSS - Styling-->
+    <style>
+    #list{
+      margin-right: 40px;
+    }
         
     #addingTasksFieldWrapper{
-      /* display: none; */
       border-radius: 5px;
       padding: 20px 60px;
     }
@@ -165,22 +95,14 @@
     }
 
     .bodycontent{
-        /* height: 100px; */
         border: 2px dashed #f69c55;
         margin-left: 100px;
         margin-right: 100px;
     }
 
     .bodycontent p {
-        color: rgba(255, 255, 255, 0.788);
-        /* text-align: center; */
-        /* line-height: 100px; */
-        
+        color: rgba(255, 255, 255, 0.788);     
         margin: auto;
-        /* padding-top: 30px;
-        padding-bottom: 30px;
-        padding-left: 10px;
-        padding-right: 10px; */
     }
     body{
         background-color: rgb(228, 19, 19);
@@ -202,12 +124,10 @@
         font-family: 'Courier New', Courier, monospace;
         width: 15em;
         height: 4em;
-        /* border: 2px solid gainsboro; */
         background: #444;
         color: #FFF;
         border: none;
         padding: 10px 20px;
-        /* border-radius: 5px; */
         display: inline-block;
         font-size: 16px;
         margin: auto;
@@ -215,10 +135,7 @@
     .button:hover{
         background: #f69c55;
     }
-    
-    /* #addingTasks{
-      margin-bottom: 20px;
-    } */
+
     #showingtasks{
       margin-top: 20px;
     }

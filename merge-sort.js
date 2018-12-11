@@ -1,3 +1,5 @@
+// ***This Merge-Sort is for Tasks with Priority Level Numbers only***
+
 // Split the array into halves and merge them recursively
 function mergeSort (arr){
     if (arr.length == 1){
@@ -8,7 +10,7 @@ function mergeSort (arr){
     const left = arr.slice(0, middle); // Items on the left side
     const right = arr.slice(middle); // Items on the right side
 
-    return merge(mergeSort(left), mergeSort(right));
+    return merge(mergeSort(left), mergeSort(right)); // This is where recursion happens
 }
 
 // Compare the arrays item by item and return the concatenated result
@@ -18,7 +20,7 @@ function merge(left, right){
     let indexRight = 0;
 
     while (indexLeft < left.length && indexRight < right.length){
-        if (left[indexLeft] < right[indexRight]){
+        if (left[indexLeft].priorityLevel < right[indexRight].priorityLevel){
             result.push(left[indexLeft]);
             indexLeft++;
         } else {
@@ -28,5 +30,4 @@ function merge(left, right){
     }
     return result.concat(left.slice(indexLeft)).concat(right.slice(indexRight));
 }
-module.exports = mergeSort;
 

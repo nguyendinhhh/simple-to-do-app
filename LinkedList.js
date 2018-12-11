@@ -3,10 +3,6 @@ class Node{
         this.data = data;
         this.next = null;
     }
-    
-    // getData(){
-    //     return this.data;
-    // }
 }
 
 class LinkedList{
@@ -34,35 +30,6 @@ class LinkedList{
             this.remove();
         }
     }
-
-    // getReferenceTo(anEntry){
-    //     let found = false;
-    //     let currentNode = this.firstNode;
-
-    //     while (!found && (currentNode != null)){
-    //         if (anEntry === currentNode.data)
-    //             found = true;
-    //         else
-    //             currentNode = currentNode.next;
-    //     }
-    //     return currentNode;
-    // }
-
-
-    // remove(){
-    //     let result = null;
-    //     if (this.firstNode!=null){
-    //         result = this.firstNode.data;
-    //         this.firstNode = this.firstNode.next;
-    //         this.numberOfEntries--;
-    //     }
-    //     return result;
-    // }
-
-    // clear(){
-    //     while (this.numberOfEntries > 0)
-    //         remove();
-    // }
 
     add(newEntry){
         const newNode = new Node(newEntry);
@@ -92,10 +59,4 @@ class LinkedList{
         }
         return result;
     }
-
-
-
 }
-
-
-// module.exports = LinkedList;
