@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
+  <head>
     <title>To Do App Template</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <base href="" target="_blank">
-
+    <link rel="stylesheet" href="style.css">
+  </head>
     <body>
         <!--PAGE CONTENT-->
         <div class = "content" >
@@ -44,7 +46,7 @@
                       <option value="5">5</option>
                     </select>                   
                   </form>
-                   <button onclick="submit();">Submit</button>
+                <button onclick="submit();">Submit</button>
                 </div>
             </div> 
 
@@ -58,90 +60,4 @@
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
       
       </body>
-
-
-<!--CSS - Styling-->
-    <style>
-    #list{
-      margin-right: 40px;
-    }
-        
-    #addingTasksFieldWrapper{
-      border-radius: 5px;
-      padding: 20px 60px;
-    }
-
-    input[type=text], select{
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: none;
-      box-sizing: border-box;
-    }
-
-    input[type=submit]{
-      width: 20em;
-      background-color:#444;
-      color: #FFF;
-      padding: 14px 20px;
-      margin: 8px 0;
-      border: none;
-      cursor: pointer;
-    }
-
-    input[type=submit]:hover{
-      background-color:#f69c55;
-    }
-
-    .bodycontent{
-        border: 2px dashed #f69c55;
-        margin-left: 100px;
-        margin-right: 100px;
-    }
-
-    .bodycontent p {
-        color: rgba(255, 255, 255, 0.788);     
-        margin: auto;
-    }
-    body{
-        background-color: rgb(228, 19, 19);
-        text-align: center;
-        color: #FFF;
-        font-size: 18px;
-        font-family: 'Courier New', Courier, monospace;
-    }
-    
-    h1 {
-        font-family: 'Courier New', Courier, monospace;
-        text-align: center;
-        color: #FFF;
-        }
-   
-    .row-padding {margin-bottom: 12px}
-    
-    .button{
-        font-family: 'Courier New', Courier, monospace;
-        width: 15em;
-        height: 4em;
-        background: #444;
-        color: #FFF;
-        border: none;
-        padding: 10px 20px;
-        display: inline-block;
-        font-size: 16px;
-        margin: auto;
-    }
-    .button:hover{
-        background: #f69c55;
-    }
-
-    #showingtasks{
-      margin-top: 20px;
-    }
-    .content{
-        margin: auto;
-        max-width: 1500px;
-    }
-    </style>
 </html>
