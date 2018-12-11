@@ -18,7 +18,7 @@ function showTasks(){
         const sorted = mergeSort(result);
         $('#list').empty();
         $.each(sorted, function(key, value) {
-          $('#list').append('<li>' + value.taskName + " --- " + value.priorityLevel + '</li>');
+          $('#list').append('<li>' + value.taskName + " -- " + value.priorityLevel + '</li>');
         });
     }
     else{

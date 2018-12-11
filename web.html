@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <base href="" target="_blank">
     <link rel="stylesheet" href="style.css">
+    
   </head>
     <body>
         <!--PAGE CONTENT-->
@@ -15,7 +16,7 @@
         <div>
         <header>
             <h1><b>TO-DO</b></h1>
-            <p><b>Please choose any of the following actions.</b></p>
+            <h3>Please choose any of the following actions.</h3>
             <p><button class="button" onclick="showTasks()">See Activities</button></p>
             <p><button class="button" onclick="addTasks()">Add Activities</button></p>
             <p><button class="button" onclick="deleteAll()">Delete All</button></p>
@@ -32,7 +33,7 @@
             </div> 
 
             <div id="addingTasksFieldWrapper"> <!--Adding Tasks-->
-                <p id="addingTasks">Please add tasks and priority level (Highest: 1, Lowest: 5).</p>
+                <p id="addingTasks">Please add tasks and priority level.<br>(Highest: 1, Lowest: 5)</p>
                 <div id="form">
                   <form>
                     <label for="tname">Task Name</label>
@@ -46,7 +47,7 @@
                       <option value="5">5</option>
                     </select>                   
                   </form>
-                <button onclick="submit();">Submit</button>
+                <button class="submitbutton" onclick="submit();">Submit</button>
                 </div>
             </div> 
 
@@ -60,4 +61,8 @@
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
       
       </body>
+
+      <footer class="myfooter">
+          <p>This To-Do List Project belongs to Nguyen Dinh</p>
+      </footer>
 </html>
