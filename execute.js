@@ -58,6 +58,12 @@ function submit() {
         priorityLevel: parseInt(plevel)
     }
 
-    linkedbag1.add(data);
-    linkedbag1.display();
+    if (data.taskName === ''){
+        console.log("Task's name is needed.");
+        document.getElementById("warning").innerHTML = "Please type in the task's name."
+    }
+    else{
+        linkedbag1.add(data);
+        linkedbag1.display();
+    }
 }
