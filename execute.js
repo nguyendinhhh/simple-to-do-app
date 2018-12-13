@@ -1,8 +1,8 @@
-let linkedbag1;
+let stack;
 
 
 window.onload = function () {
-    linkedbag1 = new LinkedList();
+  stack = new Stack();
 }
 
 function showTasks(){
@@ -10,7 +10,7 @@ function showTasks(){
     
     document.getElementById("addingTasksFieldWrapper").style.display = "none";
 
-    const result = linkedbag1.toArray(); // O(n)
+    const result = stack.toArray(); // O(n)
     console.log(result);
 
     if (result.length > 0){
@@ -28,12 +28,12 @@ function showTasks(){
 
 function deleteAll(){
     console.log("BEFORE DELETING");
-    console.log(linkedbag1);
-    linkedbag1.clear(); // O(1)
+    console.log(stack);
+    stack.clear(); // O(1)
     console.log("AFTER DELETING");
-    console.log(linkedbag1);
+    console.log(stack);
 
-    const result = linkedbag1.toArray(); // O(n)
+    const result = stack.toArray(); // O(n)
     $('#list').empty();
     $.each(result, function(key,value){
         $('#list').append('<li>' + value.taskName + '</li>');
@@ -63,7 +63,7 @@ function submit() {
         document.getElementById("warning").innerHTML = "Please type in the task's name."
     }
     else{
-        linkedbag1.add(data); // O(1)
-        linkedbag1.display(); // O(n)
+        stack.push(data); // O(1)
+        stack.display(); // O(n)
     }
 }
